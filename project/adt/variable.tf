@@ -12,3 +12,7 @@ variable "billing_account" {
   description = "Id of associated billing account"
   type        = string
 }
+
+variable "project_initial_name" {
+  description = "Initial project name"
+}

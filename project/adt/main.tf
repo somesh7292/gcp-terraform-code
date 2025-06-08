@@ -1,6 +1,6 @@
 module "project" {
   source               = "git::https://github.com/somesh7292/gcp-terraform-module.git//project?ref=project/1.0.0"
-  project_initial_name = "adt-test-${var.suffix}"
+  project_initial_name = "${var.project_initial_name}-${var.suffix}"
   billing_account      = var.billing_account
 }
 

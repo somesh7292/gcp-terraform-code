@@ -28,6 +28,7 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_billing_account"></a> [billing\_account](#input\_billing\_account) | Id of associated billing account | `string` | n/a | yes |
+| <a name="input_project_initial_name"></a> [project\_initial\_name](#input\_project\_initial\_name) | Initial project name | `any` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | GCP region name | `string` | n/a | yes |
 | <a name="input_suffix"></a> [suffix](#input\_suffix) | Suffix for the project name | `string` | n/a | yes |
 
