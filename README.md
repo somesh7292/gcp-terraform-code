@@ -55,7 +55,34 @@ The executing identity (user or service account) must have:
    ```
    terraform apply -var-file=dev.tfvars #Change tfvars as per requirement
    ```
-9. To destroy the resources
+   A new project will be created along with supported services
+9. To deploy cloud function change directory
+    ```
+    cd gcp-terraform-code/workload/abt/001-cloudfunction
+    ```
+10. Update the .tfvars file with content as per requirement
+    
+11. Update bucket and prefix in version.tf file
+   ```
+   Bucket = <state file bucket name>
+   Prefix = <Prefix to be used for state file>
+   ```
+12. Create or select workspace
+   ```
+   terraform workspace new dev # If running for first time, Dev is workspace name, rename it as per requirement
+   terraform workspace list #If workspace already exists
+   terraform workspace select dev #If workspace already exists
+   ```
+13. Terraform plan
+   ```
+   terraform plan -var-file=dev.tfvars #Change tfvars as per requirement
+   ```
+14. Terraform apply
+   ```
+   terraform apply -var-file=dev.tfvars #Change tfvars as per requirement
+   ```
+   A cloudfunction along with load balancer, secret and monitoring alert will be created.
+15. To destroy the resources
    ```
    terraform destroy -var-file=dev.tfvars #Change tfvars as per requirement
    ```
