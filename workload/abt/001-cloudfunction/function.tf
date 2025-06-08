@@ -3,7 +3,7 @@ locals {
 }
 
 module "secret_manager" {
-    source = "../../../../gcp-terraform-module/secret-manager"
+    source = "git::https://github.com/somesh7292/gcp-terraform-module.git//secret-manager?ref=secret-manager/1.0.0"
     project_id = var.project_id
     region = var.location
     secret_id = var.secret_id
