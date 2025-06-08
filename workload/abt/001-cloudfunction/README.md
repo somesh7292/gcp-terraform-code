@@ -19,7 +19,7 @@
 |------|--------|---------|
 | <a name="module_google_cloudfunctions2_function"></a> [google\_cloudfunctions2\_function](#module\_google\_cloudfunctions2\_function) | git::https://github.com/somesh7292/gcp-terraform-module.git//cloudfunction | cloudfunction/1.0.0 |
 | <a name="module_google_cloudfunctions2_function_backup"></a> [google\_cloudfunctions2\_function\_backup](#module\_google\_cloudfunctions2\_function\_backup) | git::https://github.com/somesh7292/gcp-terraform-module.git//cloudfunction | cloudfunction/1.0.0 |
-| <a name="module_secret_manager"></a> [secret\_manager](#module\_secret\_manager) | ../../../../gcp-terraform-module/secret-manager | n/a |
+| <a name="module_secret_manager"></a> [secret\_manager](#module\_secret\_manager) | git::https://github.com/somesh7292/gcp-terraform-module.git//secret-manager | secret-manager/1.0.0 |
 
 ## Resources
 

@@ -13,5 +13,7 @@ terraform {
   }
 
   backend "gcs" {
+    bucket = "terraform-state-461914"
+    prefix = "workload/abt/001-cloudfunction"
   }
 }
