@@ -61,8 +61,11 @@ The executing identity (user or service account) must have:
     cd gcp-terraform-code/workload/abt/001-cloudfunction
     ```
 10. Update the .tfvars file with content as per requirement
+    ```
+    project_id = <project id of project created by above commands>
+    ```
     
-11. Update bucket and prefix in version.tf file
+12. Update bucket and prefix in version.tf file
    ```
    Bucket = <state file bucket name>
    Prefix = <Prefix to be used for state file>
