@@ -41,9 +41,11 @@ The executing identity (user or service account) must have:
    ```
    terraform init
    ```
-6 Create or select workspace
+6. Create or select workspace
    ```
-   terraform workspace new dev  # If running for first time, Dev is workspace name, rename it as per requirement
+   # If running for first time, Dev is workspace name, rename it as per requirement
+   terraform workspace new dev
+   #If workspace already exists
    terraform workspace list
    terraform workspace select dev
    ```
