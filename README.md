@@ -86,24 +86,4 @@ The executing identity (user or service account) must have:
    ```
    terraform destroy -var-file=dev.tfvars #Change tfvars as per requirement
    ```
-
-## Providers
-
-No providers.
-
-## Modules
-
-No modules.
-
-## Resources
-
-No resources.
-
-## Inputs
-
-No inputs.
-
-## Outputs
-
-No outputs.
 <!-- END_TF_DOCS -->
