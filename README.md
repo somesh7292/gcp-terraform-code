@@ -43,11 +43,21 @@ The executing identity (user or service account) must have:
    ```
 6. Create or select workspace
    ```
-   # If running for first time, Dev is workspace name, rename it as per requirement
-   terraform workspace new dev
-   #If workspace already exists
-   terraform workspace list
-   terraform workspace select dev
+   terraform workspace new dev # If running for first time, Dev is workspace name, rename it as per requirement
+   terraform workspace list #If workspace already exists
+   terraform workspace select dev #If workspace already exists
+   ```
+7. Terraform plan
+   ```
+   terraform plan -var-file=dev.tfvars #Change tfvars as per requirement
+   ```
+8. Terraform apply
+   ```
+   terraform apply -var-file=dev.tfvars #Change tfvars as per requirement
+   ```
+9. To destroy the resources
+   ```
+   terraform destroy -var-file=dev.tfvars #Change tfvars as per requirement
    ```
 
 ## Providers
