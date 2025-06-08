@@ -15,7 +15,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cloud_function"></a> [cloud\_function](#module\_cloud\_function) | git::https://github.com/somesh7292/gcp-terraform-module.git//project-cloud-function | project-cloud-function/1.0.0 |
+| <a name="module_cloud_function"></a> [cloud\_function](#module\_cloud\_function) | git::https://github.com/somesh7292/gcp-terraform-module.git//project-cloud-function | project-cloud-function/2.0.0 |
 | <a name="module_project"></a> [project](#module\_project) | git::https://github.com/somesh7292/gcp-terraform-module.git//project | project/1.0.0 |
 | <a name="module_secret_manager"></a> [secret\_manager](#module\_secret\_manager) | git::https://github.com/somesh7292/gcp-terraform-module.git//project-secret-manager | project-secret-manager/1.0.0 |
 

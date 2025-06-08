@@ -117,3 +117,7 @@ variable "email_address" {
   description = "Email address for alerts"
   type = string
 }
+
+variable "service_account_email" {
+  description = "Service account for cloud function"
+}
