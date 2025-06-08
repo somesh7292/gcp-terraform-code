@@ -5,7 +5,7 @@ module "project" {
 }
 
 module "cloud_function" {
-  source = "git::https://github.com/somesh7292/gcp-terraform-module.git//project-cloud-function?ref=project-cloud-function/1.0.0"
+  source = "git::https://github.com/somesh7292/gcp-terraform-module.git//project-cloud-function?ref=project-cloud-function/2.0.0"
   project_id = module.project.project_id
 }
 
