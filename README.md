@@ -26,11 +26,26 @@ The executing identity (user or service account) must have:
    git clone https://github.com/somesh7292/gcp-terraform-code.git
    cd gcp-terraform-code/project/adt
    ```
-3. Create a .tfvars file with content
+3. Update the .tfvars file with content
    ```
    suffix          = "<env name>
    region          = "<default region>"
    billing_account = "<billing account id>"
+   ```
+4. Update bucket and prefix in version.tf file
+   ```
+   Bucket = <state file bucket name>
+   Prefix = <Prefix to be used for state file>
+   ```
+5. Initialise terraform
+   ```
+   terraform init
+   ```
+6 Create or select workspace
+   ```
+   terraform workspace new dev  # If running for first time, Dev is workspace name, rename it as per requirement
+   terraform workspace list
+   terraform workspace select dev
    ```
 
 ## Providers
