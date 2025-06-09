@@ -9,7 +9,7 @@
 ## Required Permissions
 The executing identity (user or service account) must have:
 
-1. roles/resourcemanager.projectIamAdmin
+1. roles/resourcemanager.projectCreator
 2. roles/iam.serviceAccountAdmin
 3. roles/secretmanager.admin
 4. roles/storage.admin
