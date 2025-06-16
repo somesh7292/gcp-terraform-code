@@ -65,12 +65,20 @@ The executing identity (user or service account) must have:
    ```
    terraform apply -var-file=dev.tfvars #Change tfvars as per requirement
    ```
-   A new project will be created along with supported services
-9. To deploy cloud function change directory
+   A new project will be created along with supported services and outputs will be displayed
+   ```
+   Outputs:
+   cloud_function_sa = "cloud-function@adt-new-dev-3e3cc9.iam.gserviceaccount.com"
+   project_id = "adt-new-dev-3e3cc9"
+   project_number = "220067226683"
+   terraform_account_email = "terraform@adt-new-dev-3e3cc9.iam.gserviceaccount.com"
+   ```
+   
+10. To deploy cloud function change directory
     ```
     cd gcp-terraform-code/workload/adt/001-cloudfunction
     ```
-10. Update the .tfvars file with content as per requirement
+11. Update the .tfvars file with content as per requirement
     ```
     project_id = <project id of project created by above commands>
     ```
