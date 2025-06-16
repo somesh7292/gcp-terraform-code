@@ -6,6 +6,7 @@
 3. A GCP project to store bucket for state files
 4. We should have a bucket already created to store the state files, the user/SA should have sufficient permission to read and write objects in this bucket
 5. Billing enabled for linking new project with a billing id
+6. Default apis should be enabled in gcp projects https://cloud.google.com/service-usage/docs/enabled-service
 
 ## Required Permissions
 The executing identity (user or service account) must have:
