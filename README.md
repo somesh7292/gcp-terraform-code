@@ -83,7 +83,7 @@ The executing identity (user or service account) must have:
     service_account_email = "Value of cloud_function_sa generated in step 8"
 
     Note:
-    Values of other variables can be updated as oer requirement
+    Values of other variables can be updated as per requirement
     ```
     
 12. Update bucket and prefix in version.tf file
