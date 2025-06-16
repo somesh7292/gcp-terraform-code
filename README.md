@@ -63,7 +63,7 @@ The executing identity (user or service account) must have:
    A new project will be created along with supported services
 9. To deploy cloud function change directory
     ```
-    cd gcp-terraform-code/workload/abt/001-cloudfunction
+    cd gcp-terraform-code/workload/adt/001-cloudfunction
     ```
 10. Update the .tfvars file with content as per requirement
     ```
