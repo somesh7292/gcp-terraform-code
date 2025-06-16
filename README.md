@@ -4,7 +4,8 @@
 1. Terraform version 1.12 or greater
 2. Google Cloud SDK
 3. A GCP project to store bucket for state files
-4. Billing enabled for linking new project with a billing id
+4. We should have a bucket already created to store the state files, the user/SA should have sufficient permission to read and write objects in this bucket
+5. Billing enabled for linking new project with a billing id
 
 ## Required Permissions
 The executing identity (user or service account) must have:
@@ -19,7 +20,9 @@ The executing identity (user or service account) must have:
 1. Authenticate with GCP
    ```
    gcloud auth login
-   gcloud auth application-default login
+   gcloud auth application-default login -- project <project id>
+
+   #note: <project id is the id of the project where bucket is created to store the state files>
    ```
 2. Clone the repo
    ```
