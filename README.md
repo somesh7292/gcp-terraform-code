@@ -42,7 +42,9 @@ The executing identity (user or service account) must have:
    ```
 5. Initialise terraform
    ```
-   terraform init
+   terraform init -backend-config=bucket=<bucket name> -backend-config=prefix=project/<project name> -reconfigure
+
+   #note <bucket name is the name of the bucket which has been already created to store the state files> <project name> is the name of the project that has to be created
    ```
 6. Create or select workspace
    ```
