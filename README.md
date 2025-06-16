@@ -43,6 +43,7 @@ The executing identity (user or service account) must have:
 5. Initialise terraform
    ```
    terraform init -backend-config=bucket=<bucket name> -backend-config=prefix=project/<project name> -reconfigure
+   
    eg: terraform init -backend-config=bucket=tfstate-4613 -backend-config=prefix=project/adt -reconfigure
 
    #note <bucket name is the name of the bucket which has been already created to store the state files> <project name> is the name of the project that has to be created
@@ -74,6 +75,7 @@ The executing identity (user or service account) must have:
 12. Update bucket and prefix in version.tf file
    ```
    terraform init -backend-config=bucket=<bucket name> -backend-config=prefix=workload/<project name>/<app code> -reconfigure
+
    eg: terraform init -backend-config=bucket=tfstate-4613 -backend-config=prefix=workload/adt/001-cloudfunction -reconfigure
    #note <bucket name> is the name of the bucket which has been already created to store the state files, <project name> is the name of the project that has to be created, <app code> is code name of the application
    ```
