@@ -200,13 +200,21 @@ A random id is added at end of each project name so that it can be identified as
 15. To test the api that has been created run the following commands
     ```
     gcloud auth login
+    ```
+    ```
     curl -X GET http://<google_compute_global_address>/helloworld -H "Authorization: bearer $(gcloud auth print-identity-token)" \
--H "Content-Type: application/json"
-   curl -X GET http://<google_compute_global_address>/apikey -H "Authorization: bearer $(gcloud auth print-identity-token)" \
--H "Content-Type: application/json"
-   curl -X GET http://<google_compute_global_address>/healthz -H "Authorization: bearer $(gcloud auth print-identity-token)" \
--H "Content-Type: application/json"
-
+    -H "Content-Type: application/json"
+    ```
+    
+    ```
+    curl -X GET http://<google_compute_global_address>/apikey -H "Authorization: bearer $(gcloud auth print-identity-token)" \
+    -H "Content-Type: application/json"
+    ```
+    
+    ```
+    curl -X GET http://<google_compute_global_address>/healthz -H "Authorization: bearer $(gcloud auth print-identity-token)" \
+    -H "Content-Type: application/json"
+    ```
 Note:
 Value of <google_compute_global_address> is given as output in step 14
 
