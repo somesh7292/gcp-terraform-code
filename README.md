@@ -64,7 +64,7 @@ The executing identity (user or service account) must have:
    ```
    terraform apply -var-file=dev.tfvars #Change tfvars as per requirement
    ```
-   A new project will be created along with supported services and outputs will be displayed
+   A new project will be created along with supported services. Eg of outputs is given below
    ```
    Outputs:
    cloud_function_sa = "cloud-function@adt-new-dev-3e3cc9.iam.gserviceaccount.com"
@@ -111,7 +111,17 @@ The executing identity (user or service account) must have:
    ```
    terraform apply -var-file=dev.tfvars #Change tfvars as per requirement
    ```
-   A cloudfunction along with load balancer, secret and monitoring alert will be created.
+   A cloudfunction along with load balancer, secret and monitoring alert will be created. Eg of output is given below
+   
+   ```
+   Outputs:
+
+   name = "function-v2"
+   secret_id = "API_KEY"
+   secret_version_id = "projects/220067226683/secrets/API_KEY/versions/1"
+   google_compute_global_address = "34.149.71.226"
+   
+   ```
 15. To destroy the resources
    ```
    terraform destroy -var-file=dev.tfvars #Change tfvars as per requirement
