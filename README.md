@@ -16,6 +16,80 @@ The executing identity (user or service account) must have:
 4. roles/storage.admin
 5. roles/cloudfunctions.admin
 
+## Project Structure
+
+├── gcp-terraform-code
+│   ├── project
+│   │   └── <project-name>
+│   │       ├── dev.tfvars
+│   │       ├── main.tf
+│   │       ├── output.tf
+│   │       ├── README.md
+│   │       ├── stage.tfvars
+│   │       ├── variable.tf
+│   │       └── versions.tf
+│   ├── README.md
+│   └── workload
+│       └── <project-name>
+│           └── <app-code>
+│               ├── dev.tfvars
+│               ├── function.tf
+│               ├── loadbalancer.tf
+│               ├── monitoring.tf
+│               ├── output.tf
+│               ├── README.md
+│               ├── src
+│               │   ├── functions.zip
+│               │   ├── main.py
+│               │   └── requirements.txt
+│               ├── stage.tfvars
+│               ├── variable.tf
+│               └── versions.tf
+└── gcp-terraform-module
+    ├── cloudfunction
+    │   ├── function.tf
+    │   ├── output.tf
+    │   ├── README.md
+    │   ├── variable.tf
+    │   └── versions.tf
+    ├── project
+    │   ├── output.tf
+    │   ├── project.tf
+    │   ├── README.md
+    │   ├── service_account.tf
+    │   ├── variable.tf
+    │   └── versions.tf
+    ├── project-cloud-function
+    │   ├── api.tf
+    │   ├── output.tf
+    │   ├── README.md
+    │   ├── service_account.tf
+    │   ├── variable.tf
+    │   └── versions.tf
+    ├── project-secret-manager
+    │   ├── api.tf
+    │   ├── README.md
+    │   └── variable.tf
+    └── secret-manager
+        ├── output.tf
+        ├── README.md
+        ├── secret-manager.tf
+        ├── variable.tf
+        └── versions.tf
+
+<project-name> : Folder created as per project name
+<app-code>: Unique code of each application
+
+## Naming convention used to created project id
+
+project_initial_name = "${var.project_initial_name}-${var.suffix}-${random_id.project_suffix.hex}"
+
+var.project_initial_name: Initial name of the project
+var.suffix : Environment name of the project
+
+A random id is added at end of each project name so that it can be identified as unique
+
+
 ##SETUP & RUN
 1. Authenticate with GCP
    ```
