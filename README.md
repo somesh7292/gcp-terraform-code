@@ -17,7 +17,7 @@ The executing identity (user or service account) must have:
 5. roles/cloudfunctions.admin
 
 ## Project Structure
-
+```
 ├── gcp-terraform-code
 │   ├── project
 │   │   └── <project-name>
@@ -76,7 +76,7 @@ The executing identity (user or service account) must have:
         ├── secret-manager.tf
         ├── variable.tf
         └── versions.tf
-
+```
 <project-name> : Folder created as per project name
 <app-code>: Unique code of each application
 
