@@ -19,7 +19,6 @@ The executing identity (user or service account) must have:
 ##SETUP & RUN
 1. Authenticate with GCP
    ```
-   gcloud auth login
    gcloud auth application-default login -- project <project id>
 
    #note:
@@ -80,7 +79,11 @@ The executing identity (user or service account) must have:
     ```
 11. Update the .tfvars file with content as per requirement
     ```
-    project_id = <project id of project created by above commands>
+    project_id = <value of project_id generated in step 8>
+    service_account_email = "Value of cloud_function_sa generated in step 8"
+
+    Note:
+    Values of other variables can be updated as oer requirement
     ```
     
 12. Update bucket and prefix in version.tf file
