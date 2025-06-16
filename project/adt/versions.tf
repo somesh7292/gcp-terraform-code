@@ -13,7 +13,5 @@ terraform {
   }
 
   backend "gcs" {
-    bucket = "terraform-state-461914"
-    prefix = "project/adt"
   }
 }
