@@ -77,8 +77,9 @@ The executing identity (user or service account) must have:
         ├── variable.tf
         └── versions.tf
 ```
-<project-name> : Folder created as per project name
-<app-code>: Unique code of each application
+project-name : Folder created as per project name
+
+app-code: Unique code of each application
 
 ## Naming convention used to created project id
 
@@ -90,7 +91,7 @@ var.suffix : Environment name of the project
 A random id is added at end of each project name so that it can be identified as unique
 
 
-##SETUP & RUN
+## SETUP & RUN
 1. Authenticate with GCP
    ```
    gcloud auth application-default login -- project <project id>
